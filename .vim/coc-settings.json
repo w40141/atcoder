@@ -1,4 +1,5 @@
 {
   "python.linting.flake8Enabled": true,
-  "python.linting.enabled": true
+  "python.linting.enabled": true,
+  "python.pythonPath": "/Users/daisuke.oku/dev/src/github.com/w40141/atcoder/.venv/bin/python"
 }
