@@ -1,4 +1,4 @@
-defmodule Main do
+efmodule Main do
   def main do
     [x, y] = IO.read(:line) |> String.trim() |> String.split(" ")
     solve(x, y) |> IO.puts()
