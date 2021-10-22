@@ -6,13 +6,10 @@ t = list(map(int, input().split()))
 
 
 def binary_search(searched_li, search_number):
-    return _binary_search(searched_li, search_number, int(len(searched_li) / 2))
-
-
-def _binary_search(searched_li, search_number, index):
     if searched_li == []:
         return False
     else:
+        index = int(len(searched_li) / 2)
         index_number = searched_li[index]
         if index_number == search_number:
             return True
