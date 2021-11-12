@@ -2,25 +2,16 @@ N = int(input())
 masu_list = list(map(int, input().split()))
 
 
-def how_many_move_to_right(start: int) -> int:
-    now_hight: int = masu_list[start]
-    move: int = 0
-    for new_hight in masu_list[start + 1 :]:
-        if now_hight >= new_hight:
-            move += 1
-            now_hight = new_hight
-        else:
-            break
-    return move
-
-
 def how_many_move_to_right_in_masu_list() -> int:
     now_move: int = 0
-    start: int = 0
-    while start < N:
-        new_move: int = how_many_move_to_right(start)
+    index: int = 0
+    while N > index:
+        new_move: int = 0
+        while N > index + 1 and masu_list[index] >= masu_list[index + 1]:
+            index += 1
+            new_move += 1
         now_move = max(now_move, new_move)
-        start += new_move + 1
+        index += 1
     return now_move
 
 
