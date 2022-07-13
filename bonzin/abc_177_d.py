@@ -34,6 +34,7 @@ class UnionFind:
             result[self.leader(i)].append(i)
         return [r for r in result if r != []]
 
+
 n, m = map(int, input().split())
 uni = UnionFind(n)
 
