@@ -34,7 +34,7 @@ func main() {
 			next := c[current][j]
 			maxPossibleLength := n - next + i
 			if maxPossibleLength >= k {
-				answer += string('a' + j)
+				answer += string(rune('a' + j))
 				current = next + 1
 				break
 			}
